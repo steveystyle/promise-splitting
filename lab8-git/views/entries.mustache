@@ -1,4 +1,6 @@
 <html>
+<!--method using one promise and letting client side handle splitting document-->
+
 
 <head>
   {{>header}}
@@ -12,13 +14,19 @@
     </a>
   </div>
 
+  <!--nav jump could be here 
+    this loops through enties document and displays if starter exists -->
   <h2>Starters</h2>
   {{#entries}}
   {{#starter}}
+
+  <!-- partial handling menu card -->
   {{>menucard}}
   {{/starter}}
   {{/entries}}
-  
+
+  <!--nav jump could be here 
+    this loops through enties document and displays if mains exists -->
   <h2>Mains</h2>
   {{#entries}}
   {{#main}}

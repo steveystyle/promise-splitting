@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/guestbookControllers.js');
 
+//added router to show both methods
 router.get("/", controller.landing_page);
 router.get("/ex2", controller.landing_page2);
 
