@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  {{>header}}
+</head>
+
+<body>
+  <h1>{{title}}</h1>
+  <div class="text-right">
+    <a href="/ex2" class="btn btn-primary">
+      switch to Example with two object passed
+    </a>
+  </div>
+
+  <h2>Starters</h2>
+  {{#entries}}
+  {{#starter}}
+  {{>menucard}}
+  {{/starter}}
+  {{/entries}}
+  
+  <h2>Mains</h2>
+  {{#entries}}
+  {{#main}}
+  {{>menucard}}
+  {{/main}}
+  {{/entries}}
+
+  {{^entries}}
+  No entries yet.
+  {{/entries}}
+</body>
+
+</html>
